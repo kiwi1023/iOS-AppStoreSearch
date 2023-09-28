@@ -47,6 +47,19 @@ extension AppInfoDTO {
                      userRatingCount: userRatingCount,
                      artworkUrl60: artworkUrl60,
                      artworkUrl100: artworkUrl100,
-                     fileSizeBytes: fileSizeBytes)
+                     fileSizeBytes: fileSizeBytes,
+                     mainLanguage: mainLanguage,
+                     mainLanguageDescription: mainLanguageDescription)
+    }
+    
+    private var mainLanguage: String {
+        guard let languageCode = languageCodesISO2A else { return "KO" }
+        if languageCode.contains("KO") { return "KO" }
+        
+        return languageCode.first ?? "KO"
+    }
+    
+    private var mainLanguageDescription: String {
+        mainLanguage.languageNameFromISOCode() ?? "한국어"
     }
 }
