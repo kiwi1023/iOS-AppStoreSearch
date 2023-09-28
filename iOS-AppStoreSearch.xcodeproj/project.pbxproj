@@ -32,6 +32,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2F52942AC50397006C3768 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4DD442BC2AC313BB0013E5FE /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4D2F52952AC503A1006C3768 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4D2F52962AC503B1006C3768 /* Application */,
+				4DD442BA2AC313BA0013E5FE /* ContentView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4D2F52962AC503B1006C3768 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		4DD442AC2AC313BA0013E5FE = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +76,8 @@
 		4DD442B72AC313BA0013E5FE /* iOS-AppStoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */,
-				4DD442BA2AC313BA0013E5FE /* ContentView.swift */,
-				4DD442BC2AC313BB0013E5FE /* Assets.xcassets */,
+				4D2F52952AC503A1006C3768 /* Source */,
+				4D2F52942AC50397006C3768 /* Resource */,
 				4DD442BE2AC313BB0013E5FE /* Preview Content */,
 			);
 			path = "iOS-AppStoreSearch";
@@ -274,6 +298,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
