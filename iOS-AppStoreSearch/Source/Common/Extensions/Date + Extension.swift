@@ -8,16 +8,22 @@
 import Foundation
 
 extension Date {
+    /// 날짜를 문자열로 변환하는 메서드.
     func toString(_ format: DateFormat) -> String {
         let formatter = DateFormatter()
+        
         formatter.timeZone = TimeZone.current
         formatter.dateFormat = format.rawValue
+      
         let localeID = Locale.preferredLanguages.first
         let deviceLocale = Locale(identifier: localeID ?? "ko-kr").language.languageCode?.identifier
+        
         formatter.locale = Locale(identifier: deviceLocale ?? "ko-kr")
+      
         return formatter.string(from: self)
     }
 }
+
 
 enum DateFormat: String {
     case hourMinute = "a h:mm"
