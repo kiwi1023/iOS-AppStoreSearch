@@ -24,8 +24,6 @@ struct AppInfo: Hashable {
     let artworkUrl60: URL?
     let artworkUrl100: URL?
     let fileSizeBytes: String
-    let mainLanguage: String
-    let mainLanguageDescription: String
 }
 
 extension AppInfo: Identifiable {

@@ -29,3 +29,24 @@ struct AppInfoDTO: Decodable {
     let fileSizeBytes: String
     let languageCodesISO2A: [String]?
 }
+
+extension AppInfoDTO {
+    func toAppInfo() -> AppInfo {
+        return .init(trackId: trackId,
+                     trackName: trackName,
+                     description: description,
+                     screenshotUrls: screenshotUrls,
+                     releaseNotes: releaseNotes,
+                     currentReleaseDate: currentVersionReleaseDate,
+                     version: version,
+                     artistName: artistName,
+                     firstGenre: genres[0],
+                     trackViewUrl: trackViewUrl,
+                     contentAdvisoryRating: contentAdvisoryRating,
+                     averageUserRating: averageUserRating,
+                     userRatingCount: userRatingCount,
+                     artworkUrl60: artworkUrl60,
+                     artworkUrl100: artworkUrl100,
+                     fileSizeBytes: fileSizeBytes)
+    }
+}
