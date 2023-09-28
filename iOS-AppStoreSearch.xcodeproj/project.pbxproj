@@ -16,6 +16,7 @@
 		4D2F52B02AC50BEA006C3768 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F52AF2AC50BEA006C3768 /* APIError.swift */; };
 		4D2F52B22AC50C5A006C3768 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F52B12AC50C5A006C3768 /* NetworkManager.swift */; };
 		4D2F52B52AC50DB4006C3768 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F52B42AC50DB4006C3768 /* UserDefault.swift */; };
+		4D2F52B82AC50E77006C3768 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F52B72AC50E76006C3768 /* ImageCache.swift */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* ContentView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		4D2F52AF2AC50BEA006C3768 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		4D2F52B12AC50C5A006C3768 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4D2F52B42AC50DB4006C3768 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		4D2F52B72AC50E76006C3768 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-AppStoreSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchApp.swift; sourceTree = "<group>"; };
 		4DD442BA2AC313BA0013E5FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		4D2F52972AC50776006C3768 /* InfraStructure */ = {
 			isa = PBXGroup;
 			children = (
+				4D2F52B62AC50E5D006C3768 /* Image */,
 				4D2F52B32AC50D93006C3768 /* LocalStorage */,
 				4D2F52982AC50787006C3768 /* Network */,
 			);
@@ -130,6 +133,14 @@
 				4D2F52B42AC50DB4006C3768 /* UserDefault.swift */,
 			);
 			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		4D2F52B62AC50E5D006C3768 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4D2F52B72AC50E76006C3768 /* ImageCache.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		4DD442AC2AC313BA0013E5FE = {
@@ -242,6 +253,7 @@
 				4D2F52B52AC50DB4006C3768 /* UserDefault.swift in Sources */,
 				4D2F52A92AC50A1B006C3768 /* NetworkManagerProtocol.swift in Sources */,
 				4D2F52A22AC5091E006C3768 /* APIConfiguration.swift in Sources */,
+				4D2F52B82AC50E77006C3768 /* ImageCache.swift in Sources */,
 				4D2F529B2AC507FA006C3768 /* ResponseDTO.swift in Sources */,
 				4D2F52A62AC509A8006C3768 /* APIRequestProtocol.swift in Sources */,
 				4D2F529D2AC5080A006C3768 /* AppInfoDTO.swift in Sources */,
