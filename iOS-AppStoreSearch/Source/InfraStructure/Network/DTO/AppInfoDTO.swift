@@ -12,8 +12,6 @@ struct AppInfoDTO: Decodable {
     let trackName: String
     let description: String
     let screenshotUrls: [URL]
-    let advisories: [String]
-    let supportedDevices: [String]
     let releaseDate: String
     let releaseNotes: String?
     let currentVersionReleaseDate: String
