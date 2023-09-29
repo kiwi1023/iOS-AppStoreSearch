@@ -22,6 +22,21 @@ extension Date {
       
         return formatter.string(from: self)
     }
+    
+    private static let pastDayFormatter: DateComponentsFormatter = {
+      let formatter = DateComponentsFormatter()
+      formatter.allowedUnits = [.second, .minute, .hour, .day, .weekOfMonth, .month, .year]
+      formatter.maximumUnitCount = 1
+      formatter.unitsStyle = .abbreviated
+      var calender = Calendar.current
+      calender.locale = Locale(identifier: "ko")
+      formatter.calendar = calender
+      return formatter
+    }()
+    
+    func getPastDay() -> String {
+        return Self.pastDayFormatter.string(from: self, to: Date()) ?? ""
+    }
 }
 
 

@@ -11,6 +11,13 @@ extension String {
     /// 이 메서드는 ISO 언어 코드를 통해 해당 언어의 이름을 반환합니다.
     func languageNameFromISOCode() -> String? {
         let locale = Locale(identifier: "KO")
+        
         return locale.localizedString(forLanguageCode: self)
+    }
+    
+    func updateDatePassedDayText() -> String {
+        guard let date = ISO8601DateFormatter().date(from: self) else { return "" }
+        
+        return date.getPastDay()
     }
 }
