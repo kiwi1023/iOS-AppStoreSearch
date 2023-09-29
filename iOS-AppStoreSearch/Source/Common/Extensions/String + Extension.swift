@@ -15,9 +15,16 @@ extension String {
         return locale.localizedString(forLanguageCode: self)
     }
     
-    func updateDatePassedDayText() -> String {
+    func getPastDayText() -> String {
         guard let date = ISO8601DateFormatter().date(from: self) else { return "" }
         
         return date.getPastDay()
+    }
+    
+    func getFileSize() -> String {
+        let formatter = ByteCountFormatter()
+        let fileSyze: Int64 = Int64(self) ?? 0
+        
+        return formatter.string(fromByteCount: fileSyze)
     }
 }
