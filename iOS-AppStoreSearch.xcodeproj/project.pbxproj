@@ -34,6 +34,8 @@
 		4D515CD62AC6A8B00011857C /* AppInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D515CC92AC6A6610011857C /* AppInfoData.json */; };
 		4D515CDB2AC6A9E60011857C /* TabOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CDA2AC6A9E60011857C /* TabOption.swift */; };
 		4D515CE02AC6AA5D0011857C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CDF2AC6AA5D0011857C /* SearchView.swift */; };
+		4D515CE32AC6AB990011857C /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CE22AC6AB990011857C /* ViewModelProtocol.swift */; };
+		4D515CE62AC6ABC80011857C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CE52AC6ABC80011857C /* SearchViewModel.swift */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* MainTabView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
@@ -78,6 +80,8 @@
 		4D515CD12AC6A7350011857C /* StubSearchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSearchHistoryService.swift; sourceTree = "<group>"; };
 		4D515CDA2AC6A9E60011857C /* TabOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOption.swift; sourceTree = "<group>"; };
 		4D515CDF2AC6AA5D0011857C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4D515CE22AC6AB990011857C /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		4D515CE52AC6ABC80011857C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-AppStoreSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchApp.swift; sourceTree = "<group>"; };
 		4DD442BA2AC313BA0013E5FE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 		4D515CD72AC6A96F0011857C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4D515CE12AC6AB8D0011857C /* Protocol */,
 				4D515CD82AC6A9910011857C /* SeachAppScene */,
 			);
 			path = Presentation;
@@ -324,9 +329,26 @@
 		4D515CDC2AC6AA420011857C /* SearchAppView */ = {
 			isa = PBXGroup;
 			children = (
+				4D515CE42AC6ABBD0011857C /* ViewModel */,
 				4D515CDF2AC6AA5D0011857C /* SearchView.swift */,
 			);
 			path = SearchAppView;
+			sourceTree = "<group>";
+		};
+		4D515CE12AC6AB8D0011857C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4D515CE22AC6AB990011857C /* ViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4D515CE42AC6ABBD0011857C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D515CE52AC6ABC80011857C /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4DD442AC2AC313BA0013E5FE = {
@@ -483,6 +505,7 @@
 				4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */,
 				4D2F52B22AC50C5A006C3768 /* NetworkManager.swift in Sources */,
 				4D2F52B52AC50DB4006C3768 /* UserDefault.swift in Sources */,
+				4D515CE32AC6AB990011857C /* ViewModelProtocol.swift in Sources */,
 				4D2F52A92AC50A1B006C3768 /* NetworkManagerProtocol.swift in Sources */,
 				4D2F52BA2AC50EE7006C3768 /* ImageCacheManager.swift in Sources */,
 				4D2F52A22AC5091E006C3768 /* APIConfiguration.swift in Sources */,
@@ -496,6 +519,7 @@
 				4D2F529D2AC5080A006C3768 /* AppInfoDTO.swift in Sources */,
 				4D515CDB2AC6A9E60011857C /* TabOption.swift in Sources */,
 				4D2F52C62AC511B7006C3768 /* AppInfo.swift in Sources */,
+				4D515CE62AC6ABC80011857C /* SearchViewModel.swift in Sources */,
 				4D2F52C82AC51653006C3768 /* String + Extension.swift in Sources */,
 				4D2F52AB2AC50AAC006C3768 /* AppStoreRequest.swift in Sources */,
 				4D2F52B02AC50BEA006C3768 /* APIError.swift in Sources */,
