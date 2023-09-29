@@ -36,6 +36,8 @@
 		4D515CE02AC6AA5D0011857C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CDF2AC6AA5D0011857C /* SearchView.swift */; };
 		4D515CE32AC6AB990011857C /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CE22AC6AB990011857C /* ViewModelProtocol.swift */; };
 		4D515CE62AC6ABC80011857C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CE52AC6ABC80011857C /* SearchViewModel.swift */; };
+		4D63186C2AC6AF3600A39D48 /* AppSearchViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63186B2AC6AF3600A39D48 /* AppSearchViewModelTest.swift */; };
+		4D63186E2AC6AF6100A39D48 /* StubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63186D2AC6AF6100A39D48 /* StubViewModel.swift */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* MainTabView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 		4D515CDF2AC6AA5D0011857C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4D515CE22AC6AB990011857C /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		4D515CE52AC6ABC80011857C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		4D63186B2AC6AF3600A39D48 /* AppSearchViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSearchViewModelTest.swift; path = "iOS-AppStoreSearchTests/ViewModel/AppSearchViewModelTest.swift"; sourceTree = SOURCE_ROOT; };
+		4D63186D2AC6AF6100A39D48 /* StubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubViewModel.swift; sourceTree = "<group>"; };
 		4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-AppStoreSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchApp.swift; sourceTree = "<group>"; };
 		4DD442BA2AC313BA0013E5FE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 			children = (
 				4D515CC82AC6A6540011857C /* TestDouble */,
 				4D515CD42AC6A86D0011857C /* Service */,
+				4D63186A2AC6AEFA00A39D48 /* ViewModel */,
 			);
 			path = "iOS-AppStoreSearchTests";
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				4D515CCD2AC6A7020011857C /* StubNetworkManager.swift */,
 				4D515CCF2AC6A7110011857C /* StubAppSearchService.swift */,
 				4D515CD12AC6A7350011857C /* StubSearchHistoryService.swift */,
+				4D63186D2AC6AF6100A39D48 /* StubViewModel.swift */,
 			);
 			path = TestDouble;
 			sourceTree = "<group>";
@@ -347,6 +353,14 @@
 			isa = PBXGroup;
 			children = (
 				4D515CE52AC6ABC80011857C /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D63186A2AC6AEFA00A39D48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D63186B2AC6AF3600A39D48 /* AppSearchViewModelTest.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -492,7 +506,9 @@
 				4D515CD22AC6A7350011857C /* StubSearchHistoryService.swift in Sources */,
 				4D515CCE2AC6A7020011857C /* StubNetworkManager.swift in Sources */,
 				4D515CCC2AC6A6F30011857C /* StubNetworkData.swift in Sources */,
+				4D63186E2AC6AF6100A39D48 /* StubViewModel.swift in Sources */,
 				4D515CC12AC6A5C30011857C /* AppSearchDataServiceTest.swift in Sources */,
+				4D63186C2AC6AF3600A39D48 /* AppSearchViewModelTest.swift in Sources */,
 				4D515CD02AC6A7110011857C /* StubAppSearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
