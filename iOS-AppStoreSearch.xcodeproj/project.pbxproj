@@ -26,6 +26,7 @@
 		4D515CB52AC6A1CD0011857C /* AppSearchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CB42AC6A1CD0011857C /* AppSearchDataService.swift */; };
 		4D515CB92AC6A2D70011857C /* SearchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CB82AC6A2D70011857C /* SearchHistoryService.swift */; };
 		4D515CC12AC6A5C30011857C /* iOS_AppStoreSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */; };
+		4D515CCA2AC6A6610011857C /* AppInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D515CC92AC6A6610011857C /* AppInfoData.json */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* ContentView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		4D515CB82AC6A2D70011857C /* SearchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryService.swift; sourceTree = "<group>"; };
 		4D515CBE2AC6A5C30011857C /* iOS-AppStoreSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-AppStoreSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchTests.swift; sourceTree = "<group>"; };
+		4D515CC92AC6A6610011857C /* AppInfoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppInfoData.json; sourceTree = "<group>"; };
 		4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-AppStoreSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchApp.swift; sourceTree = "<group>"; };
 		4DD442BA2AC313BA0013E5FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -246,9 +248,18 @@
 		4D515CBF2AC6A5C30011857C /* iOS-AppStoreSearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D515CC82AC6A6540011857C /* TestDouble */,
 				4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */,
 			);
 			path = "iOS-AppStoreSearchTests";
+			sourceTree = "<group>";
+		};
+		4D515CC82AC6A6540011857C /* TestDouble */ = {
+			isa = PBXGroup;
+			children = (
+				4D515CC92AC6A6610011857C /* AppInfoData.json */,
+			);
+			path = TestDouble;
 			sourceTree = "<group>";
 		};
 		4DD442AC2AC313BA0013E5FE = {
@@ -368,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D515CCA2AC6A6610011857C /* AppInfoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
