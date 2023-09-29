@@ -25,12 +25,13 @@
 		4D2F52C82AC51653006C3768 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F52C72AC51653006C3768 /* String + Extension.swift */; };
 		4D515CB52AC6A1CD0011857C /* AppSearchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CB42AC6A1CD0011857C /* AppSearchDataService.swift */; };
 		4D515CB92AC6A2D70011857C /* SearchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CB82AC6A2D70011857C /* SearchHistoryService.swift */; };
-		4D515CC12AC6A5C30011857C /* iOS_AppStoreSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */; };
+		4D515CC12AC6A5C30011857C /* AppSearchDataServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CC02AC6A5C30011857C /* AppSearchDataServiceTest.swift */; };
 		4D515CCA2AC6A6610011857C /* AppInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D515CC92AC6A6610011857C /* AppInfoData.json */; };
 		4D515CCC2AC6A6F30011857C /* StubNetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CCB2AC6A6F30011857C /* StubNetworkData.swift */; };
 		4D515CCE2AC6A7020011857C /* StubNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CCD2AC6A7020011857C /* StubNetworkManager.swift */; };
 		4D515CD02AC6A7110011857C /* StubAppSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CCF2AC6A7110011857C /* StubAppSearchService.swift */; };
 		4D515CD22AC6A7350011857C /* StubSearchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CD12AC6A7350011857C /* StubSearchHistoryService.swift */; };
+		4D515CD62AC6A8B00011857C /* AppInfoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D515CC92AC6A6610011857C /* AppInfoData.json */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* ContentView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
@@ -67,7 +68,7 @@
 		4D515CB42AC6A1CD0011857C /* AppSearchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchDataService.swift; sourceTree = "<group>"; };
 		4D515CB82AC6A2D70011857C /* SearchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryService.swift; sourceTree = "<group>"; };
 		4D515CBE2AC6A5C30011857C /* iOS-AppStoreSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-AppStoreSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchTests.swift; sourceTree = "<group>"; };
+		4D515CC02AC6A5C30011857C /* AppSearchDataServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchDataServiceTest.swift; sourceTree = "<group>"; };
 		4D515CC92AC6A6610011857C /* AppInfoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppInfoData.json; sourceTree = "<group>"; };
 		4D515CCB2AC6A6F30011857C /* StubNetworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNetworkData.swift; sourceTree = "<group>"; };
 		4D515CCD2AC6A7020011857C /* StubNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNetworkManager.swift; sourceTree = "<group>"; };
@@ -257,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				4D515CC82AC6A6540011857C /* TestDouble */,
-				4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */,
+				4D515CD42AC6A86D0011857C /* Service */,
 			);
 			path = "iOS-AppStoreSearchTests";
 			sourceTree = "<group>";
@@ -272,6 +273,22 @@
 				4D515CD12AC6A7350011857C /* StubSearchHistoryService.swift */,
 			);
 			path = TestDouble;
+			sourceTree = "<group>";
+		};
+		4D515CD42AC6A86D0011857C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4D515CD52AC6A8730011857C /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4D515CD52AC6A8730011857C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4D515CC02AC6A5C30011857C /* AppSearchDataServiceTest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		4DD442AC2AC313BA0013E5FE = {
@@ -400,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DD442C02AC313BB0013E5FE /* Preview Assets.xcassets in Resources */,
+				4D515CD62AC6A8B00011857C /* AppInfoData.json in Resources */,
 				4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +432,7 @@
 				4D515CD22AC6A7350011857C /* StubSearchHistoryService.swift in Sources */,
 				4D515CCE2AC6A7020011857C /* StubNetworkManager.swift in Sources */,
 				4D515CCC2AC6A6F30011857C /* StubNetworkData.swift in Sources */,
-				4D515CC12AC6A5C30011857C /* iOS_AppStoreSearchTests.swift in Sources */,
+				4D515CC12AC6A5C30011857C /* AppSearchDataServiceTest.swift in Sources */,
 				4D515CD02AC6A7110011857C /* StubAppSearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
