@@ -14,6 +14,7 @@ struct AppDetailView: View {
         ScrollView(showsIndicators: false) {
             LazyVStack() {
                 AppDetailHeaderView(result: result)
+                AppDetailBodyView(result: result)
             }
         }
         .navigationBarTitle("", displayMode: .inline)
