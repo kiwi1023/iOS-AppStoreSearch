@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct AppDetailView: View {
+    var result: AppInfo
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct AppDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppDetailView()
+        ScrollView(showsIndicators: false) {
+            LazyVStack() {
+                AppDetailHeaderView(result: result)
+            }
+        }
+        .navigationBarTitle("", displayMode: .inline)
     }
 }

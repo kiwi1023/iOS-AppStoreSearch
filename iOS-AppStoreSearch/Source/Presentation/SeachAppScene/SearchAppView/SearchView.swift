@@ -16,7 +16,7 @@ struct SearchView: View {
                 .environmentObject(viewModel)
                 .navigationTitle("검색")
                 .navigationDestination(for: AppInfo.self) { result in
-                  AppDetailView()
+                  AppDetailView(result: result)
                 }
         }
         .searchable(
