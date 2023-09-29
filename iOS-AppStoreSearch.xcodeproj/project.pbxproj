@@ -25,11 +25,22 @@
 		4D2F52C82AC51653006C3768 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F52C72AC51653006C3768 /* String + Extension.swift */; };
 		4D515CB52AC6A1CD0011857C /* AppSearchDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CB42AC6A1CD0011857C /* AppSearchDataService.swift */; };
 		4D515CB92AC6A2D70011857C /* SearchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CB82AC6A2D70011857C /* SearchHistoryService.swift */; };
+		4D515CC12AC6A5C30011857C /* iOS_AppStoreSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* ContentView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
 		4DD442C02AC313BB0013E5FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BF2AC313BB0013E5FE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D515CC22AC6A5C30011857C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DD442AD2AC313BA0013E5FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DD442B42AC313BA0013E5FE;
+			remoteInfo = "iOS-AppStoreSearch";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D2F529A2AC507FA006C3768 /* ResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDTO.swift; sourceTree = "<group>"; };
@@ -50,6 +61,8 @@
 		4D2F52C72AC51653006C3768 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		4D515CB42AC6A1CD0011857C /* AppSearchDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchDataService.swift; sourceTree = "<group>"; };
 		4D515CB82AC6A2D70011857C /* SearchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryService.swift; sourceTree = "<group>"; };
+		4D515CBE2AC6A5C30011857C /* iOS-AppStoreSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-AppStoreSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchTests.swift; sourceTree = "<group>"; };
 		4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-AppStoreSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchApp.swift; sourceTree = "<group>"; };
 		4DD442BA2AC313BA0013E5FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +71,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D515CBB2AC6A5C30011857C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DD442B22AC313BA0013E5FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,10 +243,19 @@
 			path = LocalStorage;
 			sourceTree = "<group>";
 		};
+		4D515CBF2AC6A5C30011857C /* iOS-AppStoreSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D515CC02AC6A5C30011857C /* iOS_AppStoreSearchTests.swift */,
+			);
+			path = "iOS-AppStoreSearchTests";
+			sourceTree = "<group>";
+		};
 		4DD442AC2AC313BA0013E5FE = {
 			isa = PBXGroup;
 			children = (
 				4DD442B72AC313BA0013E5FE /* iOS-AppStoreSearch */,
+				4D515CBF2AC6A5C30011857C /* iOS-AppStoreSearchTests */,
 				4DD442B62AC313BA0013E5FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -235,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */,
+				4D515CBE2AC6A5C30011857C /* iOS-AppStoreSearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +290,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D515CBD2AC6A5C30011857C /* iOS-AppStoreSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D515CC42AC6A5C30011857C /* Build configuration list for PBXNativeTarget "iOS-AppStoreSearchTests" */;
+			buildPhases = (
+				4D515CBA2AC6A5C30011857C /* Sources */,
+				4D515CBB2AC6A5C30011857C /* Frameworks */,
+				4D515CBC2AC6A5C30011857C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D515CC32AC6A5C30011857C /* PBXTargetDependency */,
+			);
+			name = "iOS-AppStoreSearchTests";
+			productName = "iOS-AppStoreSearchTests";
+			productReference = 4D515CBE2AC6A5C30011857C /* iOS-AppStoreSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4DD442B42AC313BA0013E5FE /* iOS-AppStoreSearch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DD442C32AC313BB0013E5FE /* Build configuration list for PBXNativeTarget "iOS-AppStoreSearch" */;
@@ -287,6 +335,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					4D515CBD2AC6A5C30011857C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4DD442B42AC313BA0013E5FE;
+					};
 					4DD442B42AC313BA0013E5FE = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -306,11 +358,19 @@
 			projectRoot = "";
 			targets = (
 				4DD442B42AC313BA0013E5FE /* iOS-AppStoreSearch */,
+				4D515CBD2AC6A5C30011857C /* iOS-AppStoreSearchTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D515CBC2AC6A5C30011857C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DD442B32AC313BA0013E5FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +383,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D515CBA2AC6A5C30011857C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D515CC12AC6A5C30011857C /* iOS_AppStoreSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DD442B12AC313BA0013E5FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +420,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4D515CC32AC6A5C30011857C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DD442B42AC313BA0013E5FE /* iOS-AppStoreSearch */;
+			targetProxy = 4D515CC22AC6A5C30011857C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4D515CC52AC6A5C30011857C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RL4DMCL32;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kiwi.iOS-AppStoreSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-AppStoreSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-AppStoreSearch";
+			};
+			name = Debug;
+		};
+		4D515CC62AC6A5C30011857C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9RL4DMCL32;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Kiwi.iOS-AppStoreSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-AppStoreSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-AppStoreSearch";
+			};
+			name = Release;
+		};
 		4DD442C12AC313BB0013E5FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +648,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D515CC42AC6A5C30011857C /* Build configuration list for PBXNativeTarget "iOS-AppStoreSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D515CC52AC6A5C30011857C /* Debug */,
+				4D515CC62AC6A5C30011857C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4DD442B02AC313BA0013E5FE /* Build configuration list for PBXProject "iOS-AppStoreSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
