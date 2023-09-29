@@ -27,7 +27,7 @@ struct ReleaseNoteView: View {
             HStack {
                 Text("버전 \(result.version)")
                 Spacer()
-                Text(result.currentReleaseDate.updateDatePassedDayText())
+                Text(result.currentReleaseDate.getPastDayText())
             }
             .font(.callout)
             .foregroundColor(.secondary)

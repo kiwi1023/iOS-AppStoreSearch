@@ -57,6 +57,8 @@
 		4D6318962AC6B9EE00A39D48 /* CarouselViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6318952AC6B9EE00A39D48 /* CarouselViewModifier.swift */; };
 		4D6318982AC6BA2400A39D48 /* AppDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6318972AC6BA2400A39D48 /* AppDescriptionView.swift */; };
 		4D63189B2AC6BA4200A39D48 /* AppDetailBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63189A2AC6BA4200A39D48 /* AppDetailBodyView.swift */; };
+		4D63189E2AC6BCA400A39D48 /* AppDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63189D2AC6BCA400A39D48 /* AppDetailInfoView.swift */; };
+		4D6318A02AC6BCD800A39D48 /* AppDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63189F2AC6BCD800A39D48 /* AppDetailInfo.swift */; };
 		4DD442B92AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */; };
 		4DD442BB2AC313BA0013E5FE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD442BA2AC313BA0013E5FE /* MainTabView.swift */; };
 		4DD442BD2AC313BB0013E5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD442BC2AC313BB0013E5FE /* Assets.xcassets */; };
@@ -124,6 +126,8 @@
 		4D6318952AC6B9EE00A39D48 /* CarouselViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModifier.swift; sourceTree = "<group>"; };
 		4D6318972AC6BA2400A39D48 /* AppDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDescriptionView.swift; sourceTree = "<group>"; };
 		4D63189A2AC6BA4200A39D48 /* AppDetailBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailBodyView.swift; sourceTree = "<group>"; };
+		4D63189D2AC6BCA400A39D48 /* AppDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailInfoView.swift; sourceTree = "<group>"; };
+		4D63189F2AC6BCD800A39D48 /* AppDetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailInfo.swift; sourceTree = "<group>"; };
 		4DD442B52AC313BA0013E5FE /* iOS-AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-AppStoreSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD442B82AC313BA0013E5FE /* iOS_AppStoreSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AppStoreSearchApp.swift; sourceTree = "<group>"; };
 		4DD442BA2AC313BA0013E5FE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -417,6 +421,7 @@
 				4D6318742AC6B09A00A39D48 /* AppDetailView.swift */,
 				4D6318802AC6B46100A39D48 /* Header */,
 				4D63188D2AC6B8FD00A39D48 /* Body */,
+				4D63189C2AC6BC8500A39D48 /* Footer */,
 			);
 			path = AppDetailScene;
 			sourceTree = "<group>";
@@ -460,6 +465,15 @@
 				4D6318952AC6B9EE00A39D48 /* CarouselViewModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4D63189C2AC6BC8500A39D48 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				4D63189D2AC6BCA400A39D48 /* AppDetailInfoView.swift */,
+				4D63189F2AC6BCD800A39D48 /* AppDetailInfo.swift */,
+			);
+			path = Footer;
 			sourceTree = "<group>";
 		};
 		4DD442AC2AC313BA0013E5FE = {
@@ -635,6 +649,7 @@
 				4D6318822AC6B48200A39D48 /* AppDetailHeaderView.swift in Sources */,
 				4D2F52A62AC509A8006C3768 /* APIRequestProtocol.swift in Sources */,
 				4D2F52C02AC510C9006C3768 /* Logger.swift in Sources */,
+				4D63189E2AC6BCA400A39D48 /* AppDetailInfoView.swift in Sources */,
 				4D6318932AC6B9CF00A39D48 /* AppScreenShotView.swift in Sources */,
 				4D63188C2AC6B5BC00A39D48 /* Double + Extension.swift in Sources */,
 				4D515CB52AC6A1CD0011857C /* AppSearchDataService.swift in Sources */,
@@ -651,6 +666,7 @@
 				4D6318752AC6B09A00A39D48 /* AppDetailView.swift in Sources */,
 				4D6318882AC6B55900A39D48 /* StarRatingView.swift in Sources */,
 				4D6318782AC6B0C700A39D48 /* URL + Extension.swift in Sources */,
+				4D6318A02AC6BCD800A39D48 /* AppDetailInfo.swift in Sources */,
 				4D2F52B02AC50BEA006C3768 /* APIError.swift in Sources */,
 				4D63188A2AC6B5A800A39D48 /* Int + Extension.swift in Sources */,
 				4D515CB92AC6A2D70011857C /* SearchHistoryService.swift in Sources */,
