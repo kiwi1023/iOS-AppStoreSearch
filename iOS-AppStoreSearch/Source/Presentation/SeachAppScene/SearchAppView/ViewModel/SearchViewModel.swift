@@ -13,8 +13,8 @@ class SearchViewModel: ViewModelProtocol {
     
     private let historyService: SearchHistoryServiceProtocol
     private let searchService: AppSearchDataServiceProtocol
-    
     private var cancellable = Set<AnyCancellable>()
+    
     @Published var searchState: SearchState = .defualt
     @Published var histories: [String] = []
     @Published var searchText: String = ""

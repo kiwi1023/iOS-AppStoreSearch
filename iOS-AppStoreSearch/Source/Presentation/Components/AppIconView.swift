@@ -35,7 +35,10 @@ struct AppIconView: View {
                 Image(uiImage: image)
                     .resizable()
                     .cornerRadius(iconRadius)
-                    .aspectRatio(CGSize(width: 1, height: 1), contentMode: .fit)
+                    .aspectRatio(
+                        CGSize(width: 1,height: 1),
+                        contentMode: .fit
+                    )
                     .frame(width: iconWidth)
             } else {
                 placeHolderImage

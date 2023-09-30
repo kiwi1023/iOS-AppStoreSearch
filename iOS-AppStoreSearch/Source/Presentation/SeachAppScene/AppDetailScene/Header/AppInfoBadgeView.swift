@@ -1,11 +1,26 @@
-//
-//  AppInfoBadgeView.swift
-//  iOS-AppStoreSearch
-//
-//  Created by Kiwon Song on 2023/09/29.
-//
-
 import SwiftUI
+
+private enum AppInfoBadgeViewConstants {
+    // 뷰의 높이를 나타내는 상수
+    static let viewHeight: CGFloat = 100
+    // 뱃지의 최소 너비를 나타내는 상수
+    static let badgeMinWidth: CGFloat = 100
+    // 뱃지의 최대 너비를 나타내는 상수
+    static let badgeMaxWidth: CGFloat = 105
+    // 내용 뱃지의 너비를 나타내는 상수
+    static let contentWidth: CGFloat = 80
+    // 요소 사이의 간격을 나타내는 상수
+    static let spacing: CGFloat = 8
+    // 구분선 주위의 여백을 나타내는 상수
+    static let dividerPadding: CGFloat = 8
+    // Header 텍스트
+    static let userRatingHeader = "사용자 평가"
+    static let ageHeader = "연령"
+    static let developerHeader = "개발자"
+    static let languageHeader = "언어"
+    // Footer 텍스트
+    static let ageFooter = "세"
+}
 
 struct AppInfoBadgeView: View {
     var result: AppInfo
@@ -14,23 +29,29 @@ struct AppInfoBadgeView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ContentBadge(
-                    header: result.userRatingCount.getUserRatingCountText(),
+                    header: AppInfoBadgeViewConstants.userRatingHeader,
                     content: {
                         StarRatingView(rating: result.averageUserRating)
                     },
                     footer: result.averageUserRating.getAverageUserRatingText()
                 )
-                Divider().padding(.vertical)
+                Divider().padding(
+                    .vertical,
+                    AppInfoBadgeViewConstants.dividerPadding
+                )
                 
                 TextBadge(
-                    header: "연령",
+                    header: AppInfoBadgeViewConstants.ageHeader,
                     bodyText: result.contentAdvisoryRating,
-                    footer: "세"
+                    footer: AppInfoBadgeViewConstants.ageFooter
                 )
-                Divider().padding(.vertical)
+                Divider().padding(
+                    .vertical,
+                    AppInfoBadgeViewConstants.dividerPadding
+                )
                 
                 ContentBadge(
-                    header: "개발자",
+                    header: AppInfoBadgeViewConstants.developerHeader,
                     content: {
                         Image(systemName: "person.crop.square")
                             .font(.title2)
@@ -38,15 +59,21 @@ struct AppInfoBadgeView: View {
                     },
                     footer: result.artistName
                 )
-                Divider().padding(.vertical)
+                Divider().padding(
+                    .vertical,
+                    AppInfoBadgeViewConstants.dividerPadding
+                )
                 
                 TextBadge(
-                    header: "언어",
+                    header: AppInfoBadgeViewConstants.languageHeader,
                     bodyText: result.mainLanguage,
                     footer: result.mainLanguageDescription
                 )
             }
-            .frame(height: 100, alignment: .center)
+            .frame(
+                height: AppInfoBadgeViewConstants.viewHeight,
+                alignment: .center
+            )
         }
     }
 }
@@ -55,9 +82,6 @@ struct TextBadge: View {
     private let header: String
     private let bodyText: String
     private let footer: String
-    
-    private let minWidth: CGFloat = 100
-    private let maxWidth: CGFloat = 105
     
     init(
         header: String,
@@ -70,7 +94,10 @@ struct TextBadge: View {
     }
     
     var body: some View {
-        VStack(alignment: .center, spacing: 8) {
+        VStack(
+            alignment: .center,
+            spacing: AppInfoBadgeViewConstants.spacing
+        ) {
             Text(header)
                 .font(.caption)
             Text(bodyText)
@@ -80,7 +107,10 @@ struct TextBadge: View {
             Text(footer)
                 .font(.caption)
         }
-        .frame(minWidth: minWidth, maxWidth: maxWidth)
+        .frame(
+            minWidth: AppInfoBadgeViewConstants.badgeMinWidth,
+            maxWidth: AppInfoBadgeViewConstants.badgeMaxWidth
+        )
         .foregroundColor(.secondary)
     }
 }
@@ -89,9 +119,6 @@ struct ContentBadge<Content: View>: View {
     private let header: String
     private let content: () -> Content
     private let footer: String
-    
-    private let minWidth: CGFloat = 100
-    private let maxWidth: CGFloat = 105
     
     init(
         header: String,
@@ -104,18 +131,24 @@ struct ContentBadge<Content: View>: View {
     }
     
     var body: some View {
-        VStack(alignment: .center, spacing: 8) {
+        VStack(
+            alignment: .center,
+            spacing: AppInfoBadgeViewConstants.spacing
+        ) {
             Text(header)
                 .font(.caption)
             
             content()
                 .previewLayout(.sizeThatFits)
-                .frame(width: 80)
+                .frame(width: AppInfoBadgeViewConstants.contentWidth)
+            
             Text(footer)
                 .font(.caption)
         }
-        .frame(minWidth: 100, maxWidth: 105)
+        .frame(
+            minWidth: AppInfoBadgeViewConstants.badgeMinWidth,
+            maxWidth: AppInfoBadgeViewConstants.badgeMaxWidth
+        )
         .foregroundColor(.secondary)
     }
 }
-

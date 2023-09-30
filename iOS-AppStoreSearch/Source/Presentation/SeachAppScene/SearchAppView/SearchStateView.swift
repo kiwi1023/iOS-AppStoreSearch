@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+private enum SearchStateViewConstants {
+    // 최근 검색어 타이틀
+    static let recentSearchTitle = "최근 검색어"
+    // 결과 없음 상태 타이틀
+    static let emptyStateTitle = "결과 없음"
+}
+
 struct SearchStateView: View {
     @EnvironmentObject var viewModel: SearchViewModel
     
@@ -41,22 +48,18 @@ struct SearchStateView: View {
             }
             .listStyle(.plain)
         } header: {
-            recentSearchTitle
+            Text(SearchStateViewConstants.recentSearchTitle)
+                .font(.title2)
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
+                .padding(.top)
         }
-    }
-    
-    private var recentSearchTitle: some View {
-        Text("최근 검색어")
-            .font(.title2)
-            .fontWeight(.bold)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.horizontal)
-            .padding(.top)
     }
     
     private var emptyStateView: some View {
         VStack(spacing: 10) {
-            Text("결과 없음")
+            Text(SearchStateViewConstants.emptyStateTitle)
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .fontWeight(.bold)
@@ -68,4 +71,3 @@ struct SearchStateView: View {
         }
     }
 }
-

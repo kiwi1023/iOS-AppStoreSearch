@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+private enum CarouselViewModifierConstants {
+    // 기본 아이템 간격
+    static let defaultItemSpacing: CGFloat = 8.0
+    // 초기 인덱스
+    static let defaultInitialIndex: Int = 0
+}
+
 struct CarouselViewModifier: ViewModifier {
     @State private var scrollOffset: CGFloat
     @State private var dragOffset: CGFloat
@@ -16,13 +23,22 @@ struct CarouselViewModifier: ViewModifier {
     var itemSpacing: CGFloat
     var initialIndex: Int
     
-    init(items: Int, itemWidth: CGFloat, itemSpacing: CGFloat = 8.0, initialIndex: Int = 0) {
+    init(
+        items: Int,
+        itemWidth: CGFloat,
+        itemSpacing: CGFloat = CarouselViewModifierConstants.defaultItemSpacing,
+        initialIndex: Int = CarouselViewModifierConstants.defaultInitialIndex
+    ) {
         self.items = items
         self.itemWidth = itemWidth
         self.itemSpacing = itemSpacing
         self.initialIndex = initialIndex
         
-        let contentWidth = Self.contentWidth(items: items, width: itemWidth, spacing: itemSpacing)
+        let contentWidth = Self.contentWidth(
+            items: items,
+            width: itemWidth,
+            spacing: itemSpacing
+        )
         let screenWidth = UIScreen.main.bounds.width
         let startingPointOffset = (contentWidth/2.0) - (screenWidth/2.0)
         let initialOffset = startingPointOffset + itemSpacing
@@ -47,7 +63,11 @@ struct CarouselViewModifier: ViewModifier {
                         scrollOffset += event.translation.width
                         dragOffset = 0
                         
-                        let contentWidth = Self.contentWidth(items: items, width: itemWidth, spacing: itemSpacing)
+                        let contentWidth = Self.contentWidth(
+                            items: items,
+                            width: itemWidth,
+                            spacing: itemSpacing
+                        )
                         let screenWidth = UIScreen.main.bounds.width
                         let center = scrollOffset  + (contentWidth / 2.0)
                         var index = center / (itemWidth + itemSpacing)
