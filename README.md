@@ -1,4 +1,4 @@
-![앱 상세화면](https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/2a50f77c-8399-4c88-ae2a-c226ad2a2321)# iOS-AppStoreSearch
+# iOS-AppStoreSearch
 ## HurayPositive 과제 전형
 
 > 수행 기간: 2023.09.28 ~ 2023.09.30
