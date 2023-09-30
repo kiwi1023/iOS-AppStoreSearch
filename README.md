@@ -1,4 +1,4 @@
-# iOS-AppStoreSearch
+![앱 상세화면](https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/2a50f77c-8399-4c88-ae2a-c226ad2a2321)# iOS-AppStoreSearch
 ## HurayPositive 과제 전형
 
 > 수행 기간: 2023.09.28 ~ 2023.09.30
@@ -24,11 +24,10 @@ AppStore의 검색 화면을 itunes API를 이용하여 클론코딩을 진행�
 
 |프로젝트|테스트|
 |:--:|:--:|
-|![스크린샷 2023-09-30 오후 1 12 44](https://github.com/kiwi1023/iOS_AppStore/assets/101521502/b6511c86-8bc9-4049-9b7c-0439102638a9)|![스크린샷 2023-09-30 오후 1 13 32](https://github.com/kiwi1023/iOS_AppStore/assets/101521502/efb863ff-eb90-40f4-94a5-cf3c35467d14)|
-
+|![스크린샷 2023-09-30 오후 1 12 44](https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/16fdc952-6691-45a1-8bbf-adb98e91e9ee)|![스크린샷 2023-09-30 오후 1 13 32](https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/28258f65-801b-41a1-986e-57b57d93e6ab)|
 
 ### ⚒️ Architecture
-![AppSearch (3)](https://github.com/kiwi1023/iOS_AppStore/assets/101521502/049f2276-3717-459f-8fee-62b581761a50)
+![AppSearch (3)](https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/77078a9b-875e-45ae-8d00-4a0150763a92)
 
 > **Note❗️**
 > 
@@ -40,16 +39,17 @@ AppStore의 검색 화면을 itunes API를 이용하여 클론코딩을 진행�
 ### 📋 UnitTest
 
 #### NetworkServiceTest
-<img width="946" alt="스크린샷 2023-09-28 오전 12 39 52" src="https://github.com/kiwi1023/iOS_AppStore/assets/101521502/67cfb715-4c68-466b-99a7-e0352874d649">
+<img width="946" alt="스크린샷 2023-09-28 오전 12 39 52" src="https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/ca2f48d6-e1b0-4c6d-89a5-923079760dfa">
 
 네트워크 환경과 상관없는 테스트가 가능하게 하기 위해 비동기 처리를 하는 StubManager를 생성하고 expectation을 사용하여 비동기 테스트가 가능하게 하였습니다.
+![]()
 
 #### ViewModelTest
-<img width="500" alt="스크린샷 2023-09-28 오전 12 46 22" src="https://github.com/kiwi1023/iOS_AppStore/assets/101521502/6f125b56-2933-4fac-be29-30d1280ea44e">
+<img width="500" alt="스크린샷 2023-09-28 오전 12 46 22" src="https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/698411d8-8629-435d-a3a2-2d7b497418c2">
 
 Excutions를 구현하여 행위 기반 테스트(behavior base test - 객체가 특정 동작을 수행했는지 확인)를 가능하게 했고, 가상의 배열을 주입하여 상태 기반 테스트(state base test - 객체의 상태가 변했는지 확인) 또한 진행하였습니다.
 
-## 📱 실행화면
+## 📱 실행화면![추천검색어]()
 |추천검색어|검색기록 삭제|검색|앱 상세 화면|
 |:--:|:--:|:--:|:--:|
-|<img src = "https://github.com/kiwi1023/iOS_AppStore/assets/101521502/18d1ac14-3606-4a07-9acf-8ccf16f1e675" width="180">|<img src = "https://github.com/kiwi1023/iOS_AppStore/assets/101521502/d5925062-5e52-49a8-a965-9e599007d46d" width="180">|<img src = "https://github.com/kiwi1023/iOS_AppStore/assets/101521502/107fbd15-d8ce-4e60-aeb4-259b9977e0b9" width="180">|<img src = "https://github.com/kiwi1023/iOS_AppStore/assets/101521502/d420106f-2e5d-41ad-a40d-091b6e4f4397" width="180">|
+|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/f7ddc521-88b6-40b8-93a0-e12ba34f7b56" width="180">|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/f9eb1359-e5e6-4e77-b7c2-f20ab3b4fe6e" width="180">|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/92eaee24-1f1b-4379-8943-6a5bda4b6deb" width="180">|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/0aba4dbb-d04c-4422-a46d-24e44bf7421d" width="180">|
