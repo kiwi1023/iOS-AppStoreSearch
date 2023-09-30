@@ -353,9 +353,9 @@
 		4D515CD72AC6A96F0011857C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4D515CE12AC6AB8D0011857C /* BaseProtocol */,
 				4D6318942AC6B9DF00A39D48 /* Modifiers */,
 				4D6318792AC6B0F500A39D48 /* Components */,
-				4D515CE12AC6AB8D0011857C /* Protocol */,
 				4D515CD82AC6A9910011857C /* SeachAppScene */,
 			);
 			path = Presentation;
@@ -391,12 +391,12 @@
 			path = SearchAppView;
 			sourceTree = "<group>";
 		};
-		4D515CE12AC6AB8D0011857C /* Protocol */ = {
+		4D515CE12AC6AB8D0011857C /* BaseProtocol */ = {
 			isa = PBXGroup;
 			children = (
 				4D515CE22AC6AB990011857C /* ViewModelProtocol.swift */,
 			);
-			path = Protocol;
+			path = BaseProtocol;
 			sourceTree = "<group>";
 		};
 		4D515CE42AC6ABBD0011857C /* ViewModel */ = {
