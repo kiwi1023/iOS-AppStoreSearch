@@ -14,6 +14,8 @@ extension Double {
         return String(format: "%.1f", roundedValue)
     }
     
+    /// 평균 사용자 평가를 텍스트로 반환합니다.
+    /// - Returns: 평균 사용자 평가를 텍스트로 반환합니다.
     func getAverageUserRatingText() -> String {
         self.rounded(to: 1)
     }
