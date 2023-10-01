@@ -49,7 +49,7 @@ AppStore의 검색 화면을 itunes API를 이용하여 클론코딩을 진행�
 
 Excutions를 구현하여 행위 기반 테스트(behavior base test - 객체가 특정 동작을 수행했는지 확인)를 가능하게 했고, 가상의 배열을 주입하여 상태 기반 테스트(state base test - 객체의 상태가 변했는지 확인) 또한 진행하였습니다.
 
-## 📱 실행화면![추천검색어]()
+## 📱 실행화면
 |추천검색어|검색기록 삭제|검색|앱 상세 화면|
 |:--:|:--:|:--:|:--:|
 |<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/f7ddc521-88b6-40b8-93a0-e12ba34f7b56" width="180">|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/f9eb1359-e5e6-4e77-b7c2-f20ab3b4fe6e" width="180">|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/92eaee24-1f1b-4379-8943-6a5bda4b6deb" width="180">|<img src = "https://github.com/kiwi1023/iOS-AppStoreSearch/assets/101521502/0aba4dbb-d04c-4422-a46d-24e44bf7421d" width="180">|
