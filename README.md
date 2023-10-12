@@ -1,5 +1,4 @@
 # iOS-AppStoreSearch
-## HurayPositive 과제 전형
 
 > 수행 기간: 2023.09.28 ~ 2023.09.30
 >
